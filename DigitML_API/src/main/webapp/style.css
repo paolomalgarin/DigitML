@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --light-neutral-color: #F0F2EF;
+  --dark-neutral-color: #D4D6D4;
+  --primary-color: #202021;
+  --secondary-color: #323233;
+  --accent-color: #2079BD;
+  --red: #bc2020;
+  --green: #32bc20;
+
+  --text-x-small: 10px;
+  --text-small: 15px;
+  --text-medium: 20px;
+  --text-large: 60px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--light-neutral-color);
+  color: var(--primary-color);
+}
+
+nav#navbar {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--light-neutral-color);
+  border: 2px solid var(--dark-neutral-color);
+  border-radius: 10px;
+  position: sticky;
+  top: 5px;
+  z-index: 1000;
+  text-align: center;
+}
+
+nav#navbar .nav-logo {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+nav#navbar .nav-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+nav#navbar h1 {
+  font-family: "Finger Paint", sans-serif;
+  font-size: var(--text-large);
+  margin: 0;
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav#navbar h2 {
+  font-size: var(--text-small);
+  font-style: italic;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.banner {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url('Resources/landing_bg.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .title {
+  font-family: "Finger Paint", sans-serif;
+  font-size: calc(var(--text-large) * 1.5);
+  color: var(--accent-color);
+  text-shadow: 2px 2px var(--secondary-color);
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h1 {
+  font-size: var(--text-large);
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: var(--text-medium);
+  line-height: 1.5;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--light-neutral-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: var(--text-medium);
+  margin-top: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--light-neutral-color);
+  border-top: 1px solid var(--dark-neutral-color);
+  font-size: var(--text-small);
+}
