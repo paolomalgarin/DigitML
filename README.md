@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="README - Stuff/animated-logo.svg" alt="DigitML Banner" width="800"/>
+  <img src="README - Stuff/animated-logo.svg" alt="DigitML Banner" width="600"/>
 </p>
 
 <br><br>
