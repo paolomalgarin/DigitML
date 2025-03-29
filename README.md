@@ -1,6 +1,8 @@
 <p align="center">
   <img src="README - Stuff/animated-logo.svg" alt="DigitML Banner" width="600"/>
 </p>
+<hr>
+
 
 <br><br>
 blablabla blabla ble
