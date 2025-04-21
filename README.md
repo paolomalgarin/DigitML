@@ -5,7 +5,6 @@ Tutte le componenti (Web‑App, API, ML Server e App Android) sono pensate per e
 1. **Web‑App (PHP + HTML/JS)**
 
    - **Hosting**: richiede un server Apache con PHP (es. XAMPP).
-   - Punto di accesso principale: `http://<host>/DigitML_WebApp/` (root index.php).
    - **Sezione Admin** (`ctrl_panel/`): gestione utenti, monitoraggio delle ultime 50 immagini inviate and guess, creazione/eliminazione utenti.
    - **Sezione App** (`app.php`): area in cui l’utente disegna una cifra o una lettera su un canvas. Al submit:
      - il client inverte i colori del canvas (`scripts/elabora_img.js`)
