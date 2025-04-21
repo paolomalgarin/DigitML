@@ -2,6 +2,7 @@
 <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/animated-logo.svg" alt='logo animato' width=50%> <br>
 <i width=80%>Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.</i>
 </p>
+<br>
 
 # 🤝 Contributors
 <i>Un grazie speciale a queste fantastiche persone che hanno contribuito al progetto:</i>
@@ -21,24 +22,16 @@
 > | [@Phoeyuh](https://github.com/Phoeyuh) | API | 🐝 |
 > | [@Benti06](https://github.com/Benti06) | Android app | 📱 |
 
----
+<br>
+<br>
 
-# 📖 Indice
+# 📖 INDICE  
+ → [Panoramica](#panoramica)  
+ → [Architettura & Flusso dei Dati](#architettura--flusso-dei-dati)  
+ → [Tecnologie Utilizzate](#tecnologie-utilizzate)  
 
-1. [Panoramica](#panoramica)  
-2. [Architettura & Flusso dei Dati](#architettura--flusso-dei-dati)  
-3. [Tecnologie Utilizzate](#tecnologie-utilizzate)  
-4. [Installazione](#installazione)  
-5. [Configurazione](#configurazione)  
-6. [Avvio del Progetto](#avvio-del-progetto)  
-7. [Esempi d’Uso](#esempi-duso)  
-8. [Test e Valutazione](#test-e-valutazione)  
-9. [Sviluppi Futuri](#sviluppi-futuri)  
-10. [Contribuire](#contribuire)  
-11. [Licenza](#licenza)  
-12. [Contatti](#contatti)  
-
----
+<br>
+<br>
 
 # 📌 Panoramica
 
