@@ -60,7 +60,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
    - Schermata di disegno e invio  
    - Visualizzazione del risultato di classificazione  
 5. **Diagramma**  
-   - Inserisci un diagramma a blocchi o sequenza per chiarire il flusso  
+<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=50%>
 
 <br>
 
@@ -85,6 +85,9 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - Web: screenshot del disegno e risultato
 - Android: schermate principali
 - Brevi GIF o link a un video demo
+<p align=center>
+<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/guessing.gif" alt='logo animato' width=50%>
+</p>
 
 <br>
 
