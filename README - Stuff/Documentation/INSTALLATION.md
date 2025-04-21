@@ -3,7 +3,7 @@
 
 #### Get all items
 
-```http
+```
   GET /api/items
 ```
 
@@ -13,7 +13,7 @@
 
 #### Get item
 
-```http
+```
   GET /api/items/${id}
 ```
 
