@@ -5,7 +5,7 @@
             stroke: #2079BD;
             stroke-width: 0.2;
             stroke-dasharray: 80;
-            animation: textAnimation 4s ease-in-out 1 forwards;
+            animation: textAnimation 2s ease-in-out 1 forwards;
         }
 
         @keyframes textAnimation {
