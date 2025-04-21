@@ -26,9 +26,9 @@
 <br>
 
 # 📖 INDICE  
- → [Panoramica](#panoramica)  
- → [Architettura & Flusso dei Dati](#architettura--flusso-dei-dati)  
- → [Tecnologie Utilizzate](#tecnologie-utilizzate)  
+ → [Panoramica](#📌+panoramica)  
+ → [Architettura & Flusso dei Dati](#🏗️%20architettura--flusso-dei-dati)  
+ → [Tecnologie Utilizzate]('#🛠️ tecnologie-utilizzate')  
 
 <br>
 <br>
@@ -83,5 +83,5 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 ---
 
-## 📄 Licenza
-Questo progetto è rilasciato sotto MIT License.
+# 📄 Licenza
+Questo progetto è rilasciato sotto [MIT License](https://github.com/paolomalgarin/DigitML/blob/main/LICENSE.txt).
