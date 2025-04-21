@@ -6,15 +6,7 @@ Tutte le componenti (Web‑App, API, ML Server e App Android) comunicano tra lor
   - Ospitata su Apache (es. XAMPP).
   - **URL principale**: `http://<host>/DigitML/`
   - **Sezione Admin** (`ctrl_panel/`): gestione utenti e visualizzazione delle ultime 50 immagini con predizioni.
-  - **Sezione App** (`app.php`): canvas per disegnare cifre/lettere; invia al server via POST:
-    ```json
-    {
-      "image": "data:image/png;base64,iVBORw0KG...",
-      "endpoint": "number"
-    }
-    ```
-    **Campi modificabili**  
-    - `endpoint`: `"number"` o `"letter"` → cambia il modello di predizione.
+  - **Sezione App** (`app.php`): canvas per disegnare cifre/lettere e tasto per indovinarle
 
 - **API (Java Servlet)**
   - Deploy su Tomcat (porta 8080).
@@ -27,19 +19,17 @@ Tutte le componenti (Web‑App, API, ML Server e App Android) comunicano tra lor
         "prediction": "7"
       }
       ```
-      **Campi modificabili**  
-      - `prediction`: stringa con il valore predetto.
     - **GET**: restituisce array JSON con gli ultimi 50 tentativi, es.:
       ```json
       [
-        { "timestamp": "2025-04-20T14:23:00Z", "endpoint": "number", "prediction": "5" },
-        …
+        { "image": "data:image/png;base64,iVB...", "date": "2025-04-20 21:49:10", "prediction": "5" },
+        { "image": "data:image/png;base64,aSM...", "date": "2025-03-12 15:12:03", "prediction": "B" },
       ]
       ```
       **Campi**  
-      - `timestamp`: data/ora del tentativo  
-      - `endpoint`: modello usato (`number`/`letter`)  
-      - `prediction`: risultato.
+      - `timestamp`: data e ora del tentativo  
+      - `image`: immagine di pertenza (base64)  
+      - `prediction`: guess del ML Server
 
 - **ML Server (Flask + TensorFlow)**
   - Ascolta su `http://localhost:5000`
