@@ -1,6 +1,6 @@
 <p align=center>
-![Logo Animato](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/animated-logo.svg)
-*Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.*
+<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/animated-logo.svg" alt='logo animato'>
+<i>Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.</i>
 </p>
 
 ---
