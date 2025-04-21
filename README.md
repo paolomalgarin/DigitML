@@ -49,6 +49,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 # 🏗️ Architettura & Flusso dei Dati
 
+<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=70%>
+
 1. **Client Web (PHP)**  
    - Interfaccia utente: form per il disegno/inserimento delle cifre  
    - Comunicazione via HTTP con la servlet Java  
@@ -61,8 +63,6 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 4. **App Mobile (Android)**  
    - Schermata di disegno e invio  
    - Visualizzazione del risultato di classificazione  
-5. **Diagramma**  
-<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=50%>
 
 <br>
 
