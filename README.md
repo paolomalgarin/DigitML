@@ -26,9 +26,12 @@
 <br>
 
 # 📖 INDICE  
- → [Panoramica](#-panoramica)  
- → [Architettura & Flusso dei Dati](#🏗-architettura--flusso-dei-dati)  
- → [Tecnologie Utilizzate](#-tecnologie-utilizzate)  
+ * 📌 [Panoramica](#-panoramica)  
+ * 🏗️ [Architettura & Flusso dei Dati](#%EF%B8%8F-architettura--flusso-dei-dati)  
+ * 🛠️ [Tecnologie Utilizzate](#%EF%B8%8F-tecnologie-utilizzate)  
+ * 📷 [Esempi d’Uso](#-esempi-duso)  
+ * 📊 [Dati](#-dati)  
+ * 📄 [Licenza](#-licenza)  
 
 <br>
 <br>
@@ -76,7 +79,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 ---
 
-# ✅ Test e Valutazione
+# 📊 Dati
 - Dataset di test
 - Metriche (accuracy, precision, recall)
 - Valori ottenuti e confronto con baseline
