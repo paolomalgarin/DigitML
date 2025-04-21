@@ -26,9 +26,9 @@
 <br>
 
 # 📖 INDICE  
- → [Panoramica](#📌-panoramica)  
- → [Architettura & Flusso dei Dati](#🏗️-architettura--flusso-dei-dati)  
- → [Tecnologie Utilizzate](#🛠️-tecnologie-utilizzate)  
+ → [Panoramica](#-panoramica)  
+ → [Architettura & Flusso dei Dati](#🏗-architettura--flusso-dei-dati)  
+ → [Tecnologie Utilizzate](#-tecnologie-utilizzate)  
 
 <br>
 <br>
