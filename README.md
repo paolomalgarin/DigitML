@@ -39,6 +39,8 @@
 # 📌 Panoramica
 
 Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i principali casi d’uso (es. riconoscimento in tempo reale da browser e da mobile).
+> [!TIP]
+> [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md)
 
 <br>
 
