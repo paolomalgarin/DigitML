@@ -40,6 +40,8 @@
 
 Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i principali casi d’uso (es. riconoscimento in tempo reale da browser e da mobile).
 
+<br>
+
 ---
 <br>
 
@@ -60,6 +62,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 5. **Diagramma**  
    - Inserisci un diagramma a blocchi o sequenza per chiarire il flusso  
 
+<br>
+
 ---
 <br>
 
@@ -71,6 +75,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - **Python 3.8+**: server Flask  
 - **TensorFlow/Keras**: modello di apprendimento  
 
+<br>
+
 ---
 <br>
 
@@ -80,6 +86,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - Android: schermate principali
 - Brevi GIF o link a un video demo
 
+<br>
+
 ---
 <br>
 
@@ -87,6 +95,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - Dataset di test
 - Metriche (accuracy, precision, recall)
 - Valori ottenuti e confronto con baseline
+
+<br>
 
 ---
 <br>
