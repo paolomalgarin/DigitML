@@ -12,13 +12,14 @@
   </a>
 </p>
 
-
-## Principali Collaboratori
-- [@paolomalgarin](https://github.com/paolomalgarin) 🎨🖼️🪄 - Design e web-app
-- [@anItalianGeek](https://github.com/anItalianGeek) 💼 - Project manager
-- [@michelecortiana](https://github.com/michelecortiana) 🧠 - Machine learning
-- [@Phoeyuh](https://github.com/Phoeyuh) 🐝 - API
-- [@Benti06](https://github.com/Benti06) 🚀 - Android app
+> [!NOTE]
+> | PROFILO | RUOLO ||
+> |---|---|---|
+> | [@paolomalgarin](https://github.com/paolomalgarin) | Design e web-app | ✨ |
+> | [@anItalianGeek](https://github.com/anItalianGeek) | Project manager | 💼 |
+> | [@michelecortiana](https://github.com/michelecortiana) | Machine learning | 🧠 |
+> | [@Phoeyuh](https://github.com/Phoeyuh) | API | 🐝 |
+> | [@Benti06](https://github.com/Benti06) | Android app | 📱 |
 
 ---
 
