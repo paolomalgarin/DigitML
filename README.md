@@ -3,10 +3,18 @@
 <i width=80%>Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.</i>
 </p>
 
----
-
 ## 🤝 Contributors
-- nomi + link al profilo
+
+Un grazie speciale a queste fantastiche persone che hanno contribuito al progetto:
+<a href="https://github.com/paolomalgarin/DigitML/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=paolomalgarin/DigitML" />
+</a>
+
+
+### Principali Collaboratori
+- [@fammelo](https://github.com/fammelo) 🚀 - Ideatore e maintainer
+- [@user2](https://github.com/user2) 🎨 - Design & UI
+- [@user3](https://github.com/user3) 🔧 - Fix di bug e ottimizzazioni
 
 ---
 
