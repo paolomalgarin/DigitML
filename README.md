@@ -41,6 +41,7 @@
 Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i principali casi d’uso (es. riconoscimento in tempo reale da browser e da mobile).
 
 ---
+<br>
 
 # 🏗️ Architettura & Flusso dei Dati
 
@@ -60,6 +61,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
    - Inserisci un diagramma a blocchi o sequenza per chiarire il flusso  
 
 ---
+<br>
 
 # 🛠️ Tecnologie Utilizzate
 
@@ -70,6 +72,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - **TensorFlow/Keras**: modello di apprendimento  
 
 ---
+<br>
 
 # 📷 Esempi d’Uso
 
@@ -78,6 +81,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - Brevi GIF o link a un video demo
 
 ---
+<br>
 
 # 📊 Dati
 - Dataset di test
@@ -85,6 +89,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 - Valori ottenuti e confronto con baseline
 
 ---
+<br>
 
 # 📄 Licenza
 Questo progetto è rilasciato sotto [MIT License](https://github.com/paolomalgarin/DigitML/blob/main/LICENSE.txt).
