@@ -3,22 +3,26 @@
 <i width=80%>Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.</i>
 </p>
 
-## 🤝 Contributors
+# 🤝 Contributors
+<i>Un grazie speciale a queste fantastiche persone che hanno contribuito al progetto:</i>
+<br>
+<p>
+  <a href="https://github.com/paolomalgarin/DigitML/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=paolomalgarin/DigitML" />
+  </a>
+</p>
 
-Un grazie speciale a queste fantastiche persone che hanno contribuito al progetto:
-<a href="https://github.com/paolomalgarin/DigitML/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=paolomalgarin/DigitML" />
-</a>
 
-
-### Principali Collaboratori
-- [@fammelo](https://github.com/fammelo) 🚀 - Ideatore e maintainer
-- [@user2](https://github.com/user2) 🎨 - Design & UI
-- [@user3](https://github.com/user3) 🔧 - Fix di bug e ottimizzazioni
+## Principali Collaboratori
+- [@paolomalgarin](https://github.com/paolomalgarin) 🎨🖼️🪄 - Design e web-app
+- [@anItalianGeek](https://github.com/anItalianGeek) 💼 - Project manager
+- [@michelecortiana](https://github.com/michelecortiana) 🧠 - Machine learning
+- [@Phoeyuh](https://github.com/Phoeyuh) 🐝 - API
+- [@Benti06](https://github.com/Benti06) 🚀 - Android app
 
 ---
 
-## 📖 Indice
+# 📖 Indice
 
 1. [Panoramica](#panoramica)  
 2. [Architettura & Flusso dei Dati](#architettura--flusso-dei-dati)  
@@ -35,13 +39,13 @@ Un grazie speciale a queste fantastiche persone che hanno contribuito al progett
 
 ---
 
-## 📌 Panoramica
+# 📌 Panoramica
 
 Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i principali casi d’uso (es. riconoscimento in tempo reale da browser e da mobile).
 
 ---
 
-## 🏗️ Architettura & Flusso dei Dati
+# 🏗️ Architettura & Flusso dei Dati
 
 1. **Client Web (PHP)**  
    - Interfaccia utente: form per il disegno/inserimento delle cifre  
@@ -60,7 +64,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 ---
 
-## 🛠️ Tecnologie Utilizzate
+# 🛠️ Tecnologie Utilizzate
 
 - **Java Servlet**: gestione delle richieste HTTP  
 - **PHP 8+**: interfaccia web e autenticazione base  
@@ -70,7 +74,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 ---
 
-## 📷 Esempi d’Uso
+# 📷 Esempi d’Uso
 
 - Web: screenshot del disegno e risultato
 - Android: schermate principali
@@ -78,7 +82,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 ---
 
-## ✅ Test e Valutazione
+# ✅ Test e Valutazione
 - Dataset di test
 - Metriche (accuracy, precision, recall)
 - Valori ottenuti e confronto con baseline
