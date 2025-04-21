@@ -5,7 +5,7 @@ Tutte le componenti (Web‑App, API, ML Server e App Android) sono pensate per e
 - **Web‑App (PHP + HTML/JS)**
 
   - **Hosting**: richiede **solo Apache** (anche quello di XAMPP, ma esclusivamente il modulo Apache).
-  - **Accesso principale**: `http://<host>/DigitML_WebApp/` (root `index.php`).
+  - **Accesso principale**: `http://<host>/DigitML/` (root `index.php`).
   - **Sezione Admin** (`ctrl_panel/`): gestione utenti e visualizzazione delle ultime 50 immagini inviate con relative predizioni.
   - **Sezione App** (`app.php`): area di disegno su canvas. Al submit invia una richiesta **POST** con body JSON:
     ```json
