@@ -39,8 +39,9 @@
 
 # 📌 Panoramica
 
-Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.
-Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i principali casi d’uso (es. riconoscimento in tempo reale da browser e da mobile).
+Il progetto DigitML ci è stato assegnato come attività didattica con l’obiettivo di realizzare un’applicazione distribuita per il riconoscimento di cifre manoscritte.  
+La consegna prevedeva la creazione di un sistema capace di identificare numeri scritti a mano, da utilizzare durante gli open‑day scolastici per mostrare le competenze acquisite nel triennio di Informatica.  
+Spinti dalla nostra curiosità e dalla voglia di sperimentare, abbiamo esteso il progetto aggiungendo numerose funzionalità extra, tra cui il riconoscimento delle lettere dell’alfabeto.
 > [!TIP]
 > [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md)
 
