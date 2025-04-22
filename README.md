@@ -26,7 +26,8 @@
 <br>
 
 # 📖 INDICE  
- * 📌 [Panoramica](#-panoramica)  
+ * 📥 [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md)
+ * 📌 [Panoramica](#-panoramica)
  * 🏗️ [Architettura & Flusso dei Dati](#%EF%B8%8F-architettura--flusso-dei-dati)  
  * 🛠️ [Tecnologie Utilizzate](#%EF%B8%8F-tecnologie-utilizzate)  
  * 📷 [Esempi d’Uso](#-esempi-duso)  
