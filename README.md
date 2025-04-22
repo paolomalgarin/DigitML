@@ -80,6 +80,9 @@ Spinti dalla nostra curiosità e dalla voglia di sperimentare, abbiamo esteso il
 
 <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/guessing.gif" alt='Web-app gui' width=79%><img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Android-gui.jpg" alt='Android gui' width=21%>
 
+> [!WARNING]
+> Per provarla vedi [installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md).
+
 <br>
 
 ---
