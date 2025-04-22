@@ -72,11 +72,11 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 # 🛠️ Tecnologie Utilizzate
 
-- **Java Servlet**: gestione delle richieste HTTP  
-- **PHP 8+**: interfaccia web e autenticazione base  
-- **Android (Kotlin/Java)**: app mobile cross-device  
+- **Java Servlet**: comunicazione front-end e back-end  
+- **PHP 8+**: interfaccia web e autenticazione  
+- **Android (*Java*)**: app mobile (*Android*)  
 - **Python 3.8+**: server Flask  
-- **TensorFlow/Keras**: modello di apprendimento  
+- **TensorFlow/Keras**: rete neurale  
 
 <br>
 
