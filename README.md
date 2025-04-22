@@ -52,25 +52,14 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=70%>
 
-1. **Client Web (PHP)**  
-   - Interfaccia utente: form per il disegno/inserimento delle cifre  
-   - Comunicazione via HTTP con la servlet Java  
-2. **Backend Java (Servlet)**  
-   - Endpoints REST per ricevere immagini/dati  
-   - Logica di pre-processing e inoltro al server ML  
-3. **Server ML (Flask + TensorFlow)**  
-   - API Flask per classificazione  
-   - Modello di rete neurale (CNN) addestrato su MNIST/EMNIST  
-4. **App Mobile (Android)**  
-   - Schermata di disegno e invio  
-   - Visualizzazione del risultato di classificazione  
-
 <br>
 
 ---
 <br>
 
 # 🛠️ Tecnologie Utilizzate
+
+<img src="https://skillicons.dev/icons?i=php,html,css,js,python,tensorflow,java" /> <br>
 
 - **Java Servlet**: comunicazione front-end e back-end  
 - **PHP 8+**: interfaccia web e autenticazione  
