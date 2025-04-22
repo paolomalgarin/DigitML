@@ -51,8 +51,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 # 🏗️ Architettura & Flusso dei Dati
 
- <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=70%> <br>
  *Le applicazioni front-end mandano le richieste all'API che è l'unico che può comunicare con il ML grazie ad un **HMAC***
+ <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=70%> <br>
 
 <br>
 
