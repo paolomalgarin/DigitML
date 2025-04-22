@@ -74,14 +74,10 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 ---
 <br>
 
-# 📷 Esempi d’Uso
+# 📷 Esempi d’Uso  
+> *Qui sotto un esempio della web-app e dell'app Android:*
 
-- Web: screenshot del disegno e risultato
-- Android: schermate principali
-- Brevi GIF o link a un video demo
-<p align=center>
-<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/guessing.gif" alt='logo animato' width=50%>
-</p>
+<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/guessing.gif" alt='Web-app gui' width=79%><img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Android-gui.jpg" alt='Android gui' width=21%>
 
 <br>
 
