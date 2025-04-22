@@ -92,7 +92,7 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 Dataset utilizzati:
 |NOME| MNIST | A-Z Handwritten Alphabets |
 |---|---|---|
-|IMG|<img src='https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/MNIST.png' alt='mnist'>|<img src='https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/A-Z%20Handwritten%20Alphabets.png' alt='A-Z Handwritten Alphabets'>|
+|IMG|<img src='https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/MNIST.png' alt='mnist' width=100%>|<img src='https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/A-Z%20Handwritten%20Alphabets.png' alt='A-Z Handwritten Alphabets'>|
 |TIPO DI RETE|CNN _(Convolutional Neural Network)_|CNN _(Convolutional Neural Network)_|
 |VAL ACCURACY|**98.6%**|**98.8%**|
 |TRAIN ACCURACY|99.3%|99.5%|
