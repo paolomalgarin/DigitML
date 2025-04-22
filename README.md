@@ -89,9 +89,13 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 <br>
 
 # 📊 Dati
-- Dataset di test
-- Metriche (accuracy, precision, recall)
-- Valori ottenuti e confronto con baseline
+Dataset utilizzati:
+|NOME| MNIST | A-Z Handwritten Alphabets |
+|---|---|---|
+|IMG|<img src='https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/MNIST.png' alt='mnist'>|<img src='https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/A-Z%20Handwritten%20Alphabets.png' alt='A-Z Handwritten Alphabets'>|
+|TIPO DI RETE|CNN|CNN|
+|VAL ACCURACY|`90%`|`90%`|
+|TRAIN ACCURACY|`90%`|`90%`|
 
 <br>
 
