@@ -39,6 +39,7 @@
 
 # 📌 Panoramica
 
+Progetto scolastico per il riconoscimento di cifre e lettere attraverso Machine Learning, con backend Java, frontend PHP, app Android e server Python.
 Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i principali casi d’uso (es. riconoscimento in tempo reale da browser e da mobile).
 > [!TIP]
 > [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md)
@@ -50,7 +51,8 @@ Descrivi brevemente l’obiettivo del progetto, il contesto scolastico e i princ
 
 # 🏗️ Architettura & Flusso dei Dati
 
-<img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=70%>
+ <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/data-flow.svg" alt='logo animato' width=70%> <br>
+ *Le applicazioni front-end mandano le richieste all'API che è l'unico che può comunicare con il ML grazie ad un **HMAC***
 
 <br>
 
