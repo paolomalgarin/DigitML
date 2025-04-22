@@ -26,7 +26,7 @@
 <br>
 
 # 📖 INDICE  
- * 📥 [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md)
+ * 📥 [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION-OPTIONS.md)
  * 📌 [Panoramica](#-panoramica)
  * 🏗️ [Architettura & Flusso dei Dati](#%EF%B8%8F-architettura--flusso-dei-dati)  
  * 🛠️ [Tecnologie Utilizzate](#%EF%B8%8F-tecnologie-utilizzate)  
@@ -43,7 +43,7 @@ Il progetto DigitML ci è stato assegnato come attività didattica con l’obiet
 La consegna prevedeva la creazione di un sistema capace di identificare numeri scritti a mano, da utilizzare durante gli open‑day scolastici per mostrare le competenze acquisite nel triennio di Informatica.  
 Spinti dalla nostra curiosità e dalla voglia di sperimentare, abbiamo esteso il progetto aggiungendo numerose funzionalità extra, tra cui il riconoscimento delle lettere dell’alfabeto.
 > [!TIP]
-> [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md)
+> [Installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION-OPTIONS.md)
 
 <br>
 
@@ -81,7 +81,7 @@ Spinti dalla nostra curiosità e dalla voglia di sperimentare, abbiamo esteso il
 <img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/guessing.gif" alt='Web-app gui' width=79%><img src="https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Android-gui.jpg" alt='Android gui' width=21%>
 
 > [!WARNING]
-> Per provarla vedi [installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION.md).
+> Per provarla vedi [installation guide](https://github.com/paolomalgarin/DigitML/blob/main/README%20-%20Stuff/Documentation/INSTALLATION-OPTIONS.md).
 
 <br>
 
