@@ -1,7 +1,7 @@
 # COME FARE IL DEPLOY DI **DIGITML** SU WEB SERVER (*Apache*)
 
 > [!NOTE]  
-> Se il webserver non è gestito direttamente da voi saltate i punti 1 e 2
+> Se il webserver non è gestito direttamente da voi saltate il punto 1
 
 <br>
 
