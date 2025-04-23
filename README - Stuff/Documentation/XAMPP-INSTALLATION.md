@@ -1,7 +1,7 @@
 # COME FARE IL DEPLOY DI **DIGITML** SU XAMPP
 
 > [!NOTE]  
-> I problemi di compatibilità tra le librerie e python (es. tensorflow) dovrete risolverle da soli.
+> I problemi di compatibilità tra le librerie e python (es. tensorflow) dovrete risolverle da soli.  
 > Si consiglia la versione 3.12 di python in questo momento (2025)
 
 <br>
