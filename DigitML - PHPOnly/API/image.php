@@ -1,81 +1,107 @@
 <?php
 // image_predict.php
-header('Content-Type: text/html');
+header('Content-Type: application/json');
 
-function sendToML($imageBase64, $endpoint)
-{
-    $url = 'http://' . $_SERVER['HTTP_HOST'] . str_replace('API/image.php', 'NeuralNetwork/predict' . ($endpoint == 'number' ? 'Digits' : 'Letters') . '.php', $_SERVER['REQUEST_URI']);
-    // echo $url;
+function sendToML(string $imageBase64, string $endpoint): array {
+    $url = 'http://' . $_SERVER['HTTP_HOST']
+         . str_replace('API/image.php',
+                       'NeuralNetwork/predict' . ($endpoint === 'number' ? 'Digits' : 'Letters') . '.php',
+                       $_SERVER['REQUEST_URI']
+                 );
     $payload = json_encode(['image' => 'data:image/png;base64,' . $imageBase64]);
-
-    // echo $payload;
-
-    $options = [
+    $opts = [
         'http' => [
-            'header'  => "Content-Type: application/json\r\n",
-            'method'  => 'POST',
-            'content' => $payload,
-            'ignore_errors' => true
-        ]
+            'header'       => "Content-Type: application/json\r\n",
+            'method'       => 'POST',
+            'content'      => $payload,
+            'ignore_errors'=> true,
+        ],
     ];
+    $ctx      = stream_context_create($opts);
+    $resp     = @file_get_contents($url, false, $ctx);
+    if ($resp === false) {
+        return ['error' => 'HTTP request failed'];
+    }
+    if (strpos($resp, 'Errore PNG:') !== false) {
+        return ['error' => $resp];
+    }
+    return json_decode($resp, true) ?: ['error' => 'Invalid JSON response'];
+}
 
-    try {
-        $context = stream_context_create($options);
-        $response = file_get_contents($url, false, $context);
+//
+// 1) Lettura input JSON e base64
+//
+$raw   = file_get_contents('php://input');
+$data  = json_decode($raw, true);
+if (empty($data['image'])) {
+    echo json_encode(['error' => 'Nessuna immagine inviata']);
+    exit;
+}
+$endpoint = $data['endpoint'] ?? 'number';
+$img64    = $data['image'];
+if (strpos($img64, 'base64,') !== false) {
+    $img64 = substr($img64, strpos($img64, 'base64,') + 7);
+}
+$imgData = base64_decode($img64, true);
+if ($imgData === false) {
+    echo json_encode(['error' => 'Base64 non valido']);
+    exit;
+}
 
-        // Controlla se la risposta contiene un errore PNG
-        if (strpos($response, 'Errore PNG:') !== false) {
-            return ['error' => $response];
-        }
+//
+// 2) Creazione risorsa GD e preprocessing
+//
+$src = @imagecreatefromstring($imgData);
+if (! $src) {
+    echo json_encode(['error' => 'Immagine sorgente non valida']);
+    exit;
+}
 
-        return json_decode($response, true) ?? ['error' => 'Risposta non valida: ' . $response];
-    } catch (Exception $e) {
-        return ['error' => $e->getMessage()];
+// scala di grigi + negativo
+$w    = imagesx($src);
+$h    = imagesy($src);
+$gray = imagecreatetruecolor($w, $h);
+imagecopy($gray, $src, 0, 0, 0, 0, $w, $h);
+imagedestroy($src);
+
+// ridimensiona 28×28
+$resized = imagescale($gray, 28, 28, IMG_NEAREST_NEIGHBOUR);
+imagedestroy($gray);
+
+// 3) Costruisci un canvas truecolor 28×28
+$output = imagecreatetruecolor(28, 28);
+imagealphablending($output, false);
+imagesavealpha($output, false);
+
+for ($x = 0; $x < 28; $x++) {
+    for ($y = 0; $y < 28; $y++) {
+        $idx       = imagecolorat($resized, $x, $y);
+        $c         = imagecolorsforindex($resized, $idx);
+        $grayValue = (int)(($c['red'] + $c['green'] + $c['blue']) / 3);
+        // crea il colore RGB=grayValue
+        $col = ($grayValue << 16) | ($grayValue << 8) | $grayValue;
+        imagesetpixel($output, $x, $y, $col);
     }
 }
+imagedestroy($resized);
 
-$data = json_decode(file_get_contents('php://input'), true);
-$endpoint = $data['endpoint'];
+//
+// 4) Esporta PNG con filtro NONE (0)
+//
+// Nota: usiamo PNG_FILTER_NONE per garantire che la prima byte di ogni scanline
+// sia 0, così il tuo parser non rifiuta “Filtro PNG 1 non supportato”.
+//
+ob_start();
+imagepng($output, null, 0, PNG_FILTER_NONE);
+$pngBlob = ob_get_clean();
+imagedestroy($output);
 
-// Estrai e decodifica immagine
-$imageParts = explode(',', $data['image']);
-$base64 = end($imageParts);
-$imageData = base64_decode($base64);
+//
+// 5) Invio al server di inferenza
+//
+$base64Out  = base64_encode($pngBlob);
+$prediction = sendToML($base64Out, $endpoint);
 
-if ($imageData) {
-    // Processa immagine// Modifica la sezione di processing
-    $src = imagecreatefromstring($imageData);
-
-    // Crea immagine in scala di grigi
-    $gray = imagecreatetruecolor(imagesx($src), imagesy($src));
-    imagecopy($gray, $src, 0, 0, 0, 0, imagesx($src), imagesy($src));
-    imagetruecolortopalette($gray, false, 256);
-
-    // Inverti colori se necessario
-    imagefilter($gray, IMG_FILTER_NEGATE);
-
-    // Ridimensiona
-    $resized = imagescale($gray, 28, 28);
-    imagedestroy($gray);
-
-    // Salva l'immagine con impostazioni specifiche
-    // Modifica la sezione di salvataggio dell'immagine
-    ob_start();
-    // Forza l'uso di PNG 8-bit colortype 0 (grayscale) e disabilita filtri
-    $grayscale = imagecreatetruecolor(28, 28);
-    imagepalettecopy($grayscale, $resized);
-    imagepng($grayscale, null, 0, PNG_NO_FILTER);
-    imagedestroy($grayscale);
-    $resizedImage = ob_get_clean();
-    $resizedBase64 = base64_encode($resizedImage);
-
-
-    // Invia al ML
-    $prediction = sendToML($resizedBase64, $endpoint);
-
-    
-    echo json_encode($prediction);
-
-    imagedestroy($src);
-    imagedestroy($resized);
-}
+// 6) Output JSON finale
+// echo $base64Out;
+echo json_encode($prediction);
