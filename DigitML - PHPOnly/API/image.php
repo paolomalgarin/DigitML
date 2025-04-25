@@ -45,7 +45,7 @@ function sendToML(string $imageBase64, string $endpoint): array {
     if (strpos($resp, 'Errore PNG:') !== false) {
         return ['error' => $resp];
     }
-    return json_decode($resp, true) ?: ['error' => 'Invalid JSON response'];
+    return json_decode($resp, true) ?: ['error' => "Invalid JSON response (resp: $resp, data:image/png;base64,$imageBase64)"];
 }
 
 //
@@ -121,7 +121,6 @@ imagedestroy($output);
 //
 $base64Out  = base64_encode($pngBlob);
 $prediction = sendToML($base64Out, $endpoint);
-
 //
 // 6.1) Salvataggio nel file imageStore.json
 //
