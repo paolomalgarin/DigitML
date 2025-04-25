@@ -3,7 +3,7 @@ let dateOrder = true;
 let numOrder = false;
 
 function getResponseList(ip) {
-    fetch(`http://${ip}:8080/DigitML_API/image`, {
+    fetch(`../API/image.php`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

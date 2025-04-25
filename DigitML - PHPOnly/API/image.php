@@ -2,6 +2,26 @@
 // image_predict.php
 header('Content-Type: application/json');
 
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $logFile = __DIR__ . '/imageStore.json';
+    if (!file_exists($logFile)) {
+        echo json_encode([]);
+        exit;
+    }
+
+    $content = file_get_contents($logFile);
+    $data = json_decode($content, true);
+    if (!is_array($data)) {
+        echo json_encode([]);
+        exit;
+    }
+
+    echo json_encode($data);
+    exit;
+}
+
+
 function sendToML(string $imageBase64, string $endpoint): array {
     $url = 'http://' . $_SERVER['HTTP_HOST']
          . str_replace('API/image.php',
@@ -101,6 +121,37 @@ imagedestroy($output);
 //
 $base64Out  = base64_encode($pngBlob);
 $prediction = sendToML($base64Out, $endpoint);
+
+//
+// 6.1) Salvataggio nel file imageStore.json
+//
+$logFile = __DIR__ . '/imageStore.json';
+
+// Crea struttura iniziale se il file non esiste o è malformato
+$logData = [];
+if (file_exists($logFile)) {
+    $contents = file_get_contents($logFile);
+    $logData = json_decode($contents, true);
+    if (!is_array($logData)) {
+        $logData = [];
+    }
+}
+
+// Aggiungi nuova entry
+$logData[] = [
+    'image'      => 'data:image/png;base64,' . $base64Out,
+    'prediction' => $prediction['prediction'] ?? $prediction, // fallback in caso di errore
+    'date'       => date('d/m/Y H:i'),
+];
+
+// Mantieni solo le ultime 50
+if (count($logData) > 50) {
+    $logData = array_slice($logData, -50);
+}
+
+// Salva di nuovo nel file
+file_put_contents($logFile, json_encode($logData, JSON_PRETTY_PRINT));
+
 
 // 6) Output JSON finale
 // echo $base64Out;
