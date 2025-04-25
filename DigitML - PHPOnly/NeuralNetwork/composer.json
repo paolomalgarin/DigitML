@@ -1,0 +1,17 @@
+{
+    "name": "paolo/test_nn",
+    "autoload": {
+        "psr-4": {
+            "Paolo\\TestNn\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pallo",
+            "email": "paolomalgarin@gmail.com"
+        }
+    ],
+    "require": {
+        "ankane/onnxruntime": "^0.2.6"
+    }
+}
