@@ -56,7 +56,7 @@ function sendImage(invertedSrc, ip, isNumber) {
         .then(r => {
             console.log(r); //stampo la risposta dell'🐝🐝
 
-            if (r.prediction) {
+            if (r.prediction != undefined) {
                 numero && (numero.innerText = r.prediction);
             } else {
                 numero && (numero.innerHTML = `Errore ${r.status}:<br>${r.message}`);
