@@ -138,7 +138,7 @@ if (file_exists($logFile)) {
 
 // Aggiungi nuova entry
 $logData[] = [
-    'image'      => 'data:image/png;base64,' . $base64Out,
+    'image'      => 'data:image/png;base64,' . $img64,
     'prediction' => $prediction['prediction'] ?? $prediction, // fallback in caso di errore
     'date'       => date('d/m/Y H:i'),
 ];
